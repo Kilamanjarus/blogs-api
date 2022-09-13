@@ -1,0 +1,7 @@
+@posts.map do |post|
+  {
+    id: post.id,
+    owner: current_user.id == @post.user_id,
+    url: post_url(post, format: :json),
+  }
+end

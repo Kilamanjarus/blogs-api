@@ -1,0 +1,6 @@
+{
+  id: @user.id,
+  owner: current_user.id == @post.user_id
+  created_at: @user.created_at,
+  updated_at: @user.updated_at
+}
